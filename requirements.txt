@@ -1,0 +1,1 @@
+requests numpy faiss-cpu sentence-transformers

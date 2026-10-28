@@ -1,0 +1,45 @@
+{
+  "questions_evaluated": 18,
+  "retrieval_metrics": {
+    "k": 3,
+    "averaging": "macro average across answerable questions",
+    "rag": {
+      "recall@3": 0.8466666666666666,
+      "recall@3_n": 15,
+      "precision@3": 0.3555555555555555,
+      "precision@3_n": 15,
+      "mrr": 1.0,
+      "mrr_n": 15,
+      "ndcg@3": 1.0,
+      "ndcg@3_n": 15
+    },
+    "okf": {
+      "recall@3": 0.86,
+      "recall@3_n": 15,
+      "precision@3": 0.3777777777777777,
+      "precision@3_n": 15,
+      "mrr": 0.8222222222222223,
+      "mrr_n": 15,
+      "ndcg@3": 0.8549570771459152,
+      "ndcg@3_n": 15
+    },
+    "answerable_questions_scored": 15,
+    "unanswerable_questions_excluded_from_retrieval_averages": 3
+  },
+  "latency": {
+    "unit": "seconds",
+    "measurement": "End-to-end generate_answer call, including the pipeline's own retrieval and LLM generation",
+    "rag": {
+      "count": 18,
+      "mean_seconds": 17.945,
+      "median_seconds": 13.077,
+      "total_seconds": 323.006
+    },
+    "okf": {
+      "count": 18,
+      "mean_seconds": 42.657,
+      "median_seconds": 26.745,
+      "total_seconds": 767.827
+    }
+  }
+}
